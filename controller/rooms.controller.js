@@ -16,5 +16,12 @@ module.exports = {
         console.log(err)
     }
     },
+    roomBooking: async (req, res) => {
+    try {
+        await roomsDetails.roomsPayment(req, res)
+    } catch(err){
+        console.log(err)
+    }
+    },
     
 }

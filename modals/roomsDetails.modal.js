@@ -11,7 +11,7 @@ const RoomsSchema = new mongoose.Schema({
     required: true,
     trim: true
   }, 
-  facility: {
+  amenities: {
     type: Array,
     required: true,
   }, 
@@ -19,6 +19,27 @@ const RoomsSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  rating:{
+    type:Array,
+    trim: true
+  },
+  description:{
+    type:String,
+    trim: true
+  },
+  docs:{
+    type:Array,
+    trim: true
+  },
+  hotel_policies:{
+    type:Array,
+    trim: true
+  },
+  room_available:{
+    type:Number,
+    trim: true
+  }
+
 })
 
 const roomsDetails = mongoose.model('Rooms', RoomsSchema)
